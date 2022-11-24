@@ -92,7 +92,7 @@ reviews[7].feedback = 'this place is chill with really cool people, great for ge
 console.log(reviews);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
-Write a funcion that creates an object with name, rating, feedback, add the new review to the end of an array and returns the resulting array. 
+Write a function that creates an object with name, rating, feedback, add the new review to the end of an array and returns the resulting array. 
 
 Use the addReview function below to do the following:
   1. Receive an array in the FIRST parameter (invoke with the reviews array above)
@@ -103,10 +103,11 @@ Use the addReview function below to do the following:
 */
 
 
-function addReview(/*Your Code Here */){
-  /*Your Code Here */
+function addReview(reviews, name, rating, feedback){
+  reviews.push({name: name, rating: rating, feedback: feedback});
+  return reviews;
 }
-
+console.log(addReview(reviews, 'Billy', 2, 'Lame food!'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -118,7 +119,6 @@ Use the getReviewByIndex function below to do the following:
   3. The function should return the following string: "{name} gave the restaurant a {rating} star review, and their feedback was: {feedback}"
   For example: getReviewByIndex(reviews,0) would return: "Daniela gave the restaurant a 5 star review, and their feedback was: Beautiful atmosphere and wonderful vegan options!"
 */
-
 
 function getReviewByIndex(/*Your code here*/) {
   /*Your code here*/
